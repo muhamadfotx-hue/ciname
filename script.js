@@ -1,4 +1,12 @@
 // =================================
+// CINEMA — TMDB API
+// =================================
+
+const API_KEY = "80fc2828fb96e5e2d42d82e811a41c91";
+const API_URL = "https://api.themoviedb.org/3";
+const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
+
+// =================================
 // CINEMA — HERO SLIDESHOW
 // =================================
 
@@ -508,3 +516,23 @@ trailerModal.addEventListener("click", (event) => {
     closeTrailer();
   }
 });
+
+// =================================
+// CINEMA — LOAD POPULAR MOVIES
+// =================================
+
+async function getPopularMovies() {
+  try {
+    const response = await fetch(
+      `${API_URL}/movie/popular?api_key=${API_KEY}&language=uz-UZ&page=1`
+    );
+
+    const data = await response.json();
+
+    console.log("TMDB kinolar:", data.results);
+  } catch (error) {
+    console.error("Kino yuklashda xatolik:", error);
+  }
+}
+
+getPopularMovies();
