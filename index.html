@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMA — Premium Movie Experience</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="#" class="logo">CINE<span>MA</span><small>PREMIUM</small></a>
+
+      <nav class="nav-links">
+        <a class="active" href="#">Bosh sahifa</a>
+        <a href="#movies">Kinolar</a>
+        <a href="#series">Seriallar</a>
+        <a href="#genres">Janrlar</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- SEARCH -->
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            type="search"
+            id="movieSearch"
+            placeholder="Kino qidirish..."
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- LANGUAGE -->
+        <div class="language-dropdown">
+          <button class="language-toggle" type="button">
+            <span class="current-language">🇺🇿 UZ</span>
+            <span class="language-arrow">⌄</span>
+          </button>
+
+          <div class="language-menu">
+            <button class="language-option active" type="button" data-lang="uz">
+              <span>🇺🇿</span>
+              <span>O‘zbekcha</span>
+              <span class="language-check">✓</span>
+            </button>
+
+            <button class="language-option" type="button" data-lang="ru">
+              <span>🇷🇺</span>
+              <span>Русский</span>
+              <span class="language-check"></span>
+            </button>
+
+            <button class="language-option" type="button" data-lang="en">
+              <span>🇬🇧</span>
+              <span>English</span>
+              <span class="language-check"></span>
+            </button>
+          </div>
+        </div>
+
+        <button class="login-btn">Kirish <span>↗</span></button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <div class="hero-label">
+            <span class="gold-dot"></span>
+            CINEMA ORIGINAL
+          </div>
+
+          <p class="hero-small">BU HAFTANING ENG YAXSHI FILMI</p>
+
+          <h1>INTER<br /><span>STELLAR</span></h1>
+
+          <div class="movie-info">
+            <span class="rating">★ 8.7</span>
+            <span>2014</span>
+            <span>2 soat 49 daqiqa</span>
+            <span class="quality">4K ULTRA HD</span>
+          </div>
+
+          <p class="hero-description">
+            Insoniyat kelajagi xavf ostida. Bir guruh tadqiqotchilar yangi
+            dunyoni izlash uchun koinotga yo'l olishadi. Ularning sayohati
+            insoniyat taqdirini o'zgartirishi mumkin.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="watch-btn">▶ TOMOSHA QILISH</button>
+            <button class="info-btn">ⓘ Batafsil</button>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>01 <i>/ 04</i></span>
+          <div class="slide-line"><span></span></div>
+          <span class="next-slide">KEYINGI FILM →</span>
+        </div>
+      </section>
+
+      <!-- TRENDING -->
+      <section class="movie-section" id="movies">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">SIZ UCHUN TANLANDI</p>
+            <h2>Trenddagi <span>kinolar</span></h2>
+          </div>
+
+          <a href="#">Barchasini ko'rish ↗</a>
+        </div>
+
+        <div class="movie-grid">
+          <article class="movie-card">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                alt="Interstellar"
+              />
+              <span class="poster-rating">★ 8.7</span>
+              <button class="poster-play">▶</button>
+            </div>
+            <h3>Interstellar</h3>
+            <p>2014 <span>•</span> Fantastika</p>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+                alt="Inception"
+              />
+              <span class="poster-rating">★ 8.8</span>
+              <button class="poster-play">▶</button>
+            </div>
+            <h3>Inception</h3>
+            <p>2010 <span>•</span> Triller</p>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+                alt="The Dark Knight"
+              />
+              <span class="poster-rating">★ 9.0</span>
+              <button class="poster-play">▶</button>
+            </div>
+            <h3>The Dark Knight</h3>
+            <p>2008 <span>•</span> Jangari</p>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                alt="Dune"
+              />
+              <span class="poster-rating">★ 8.0</span>
+              <button class="poster-play">▶</button>
+            </div>
+            <h3>Dune</h3>
+            <p>2021 <span>•</span> Fantastika</p>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                alt="Joker"
+              />
+              <span class="poster-rating">★ 8.4</span>
+              <button class="poster-play">▶</button>
+            </div>
+            <h3>Joker</h3>
+            <p>2019 <span>•</span> Drama</p>
+          </article>
+        </div>
+
+        <!-- SEARCH MESSAGE -->
+        <p id="searchMessage" style="display: none">
+          Bu nomdagi kino topilmadi 😔
+        </p>
+      </section>
+
+      <!-- GENRES -->
+      <section class="genre-section" id="genres">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">O'ZINGIZGA MOSINI TANLANG</p>
+            <h2>Kino <span>janrlari</span></h2>
+          </div>
+        </div>
+
+        <div class="genre-grid">
+          <div class="genre-card">⚔️ <span>Jangari</span></div>
+          <div class="genre-card">🚀 <span>Fantastika</span></div>
+          <div class="genre-card">😂 <span>Komediya</span></div>
+          <div class="genre-card">👻 <span>Horror</span></div>
+          <div class="genre-card">❤️ <span>Romantika</span></div>
+          <div class="genre-card">🔍 <span>Detektiv</span></div>
+        </div>
+      </section>
+
+      <!-- SERIES -->
+      <section class="movie-section" id="series">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">DAVOMIY HAYAJON</p>
+            <h2>Mashhur <span>seriallar</span></h2>
+          </div>
+
+          <a href="#">Barchasini ko'rish ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="logo">CINE<span>MA</span></div>
+      <p>© 2026 CINEMA. Barcha huquqlar himoyalangan.</p>
+      <p>PREMIUM MOVIE EXPERIENCE</p>
+    </footer>
+
+    <!-- MOVIE DETAILS MODAL -->
+    <div class="movie-modal" id="movieModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">✕</button>
+
+        <div class="modal-poster">
+          <img id="modalImage" src="" alt="Movie poster" />
+        </div>
+
+        <div class="modal-info">
+          <span class="modal-label">CINEMA PREMIUM</span>
+          <h2 id="modalTitle">Movie title</h2>
+
+          <div class="modal-meta">
+            <span id="modalRating">★ 8.5</span>
+            <span id="modalYear">2024</span>
+            <span id="modalGenre">Drama</span>
+          </div>
+
+          <p id="modalDescription">Kino haqida ma'lumot.</p>
+
+          <button class="modal-watch-btn">▶ TOMOSHA QILISH</button>
+        </div>
+      </div>
+    </div>
+<!-- CINEMA TRAILER MODAL -->
+<div class="trailer-modal" id="trailerModal">
+  <div class="trailer-content">
+    <button class="trailer-close" id="trailerClose">✕</button>
+
+    <h2 id="trailerTitle">KINO TREYLERI</h2>
+
+    <div class="trailer-video">
+      <iframe
+        id="trailerFrame"
+        src=""
+        allow="autoplay; encrypted-media; fullscreen"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <button class="watch-full-btn" id="watchFullBtn">
+      ▶ KINONI KO‘RISH
+    </button>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
